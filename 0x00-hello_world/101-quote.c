@@ -2,11 +2,11 @@
 #include <unistd.h>
 
 /**
- *main - entry point
+ *main - Entry point
  *
  *Description: and that piece of art is useful dora korpar
  *
- *return: 0 (sucess)
+ *return: Always 0 (sucess)
  */
 
 int main(void)
