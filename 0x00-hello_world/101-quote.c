@@ -2,11 +2,11 @@
 #include <unistd.h>
 
 /*
- * main:entry point
+ * main - entry point
  *
- *description:and that piece of art is useful dora korpar
+ *Description:and that piece of art is useful dora korpar
  *
- * return 0
+ * return 0 sucess
  */
 
 int main(void)
