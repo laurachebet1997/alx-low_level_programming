@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*
- * main - entry point
+/**
+ *main - entry point
  *
- *Description:and that piece of art is useful dora korpar
+ *Description: and that piece of art is useful dora korpar
  *
- * return 0 sucess
+ *return: 0 (sucess)
  */
 
 int main(void)

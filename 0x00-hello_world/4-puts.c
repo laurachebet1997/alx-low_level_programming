@@ -3,7 +3,7 @@
 /**
  *main - entry point
  *
- *return 0 :success 
+ *return: 0 (success) 
  *
  */
 
