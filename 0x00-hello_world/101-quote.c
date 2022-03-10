@@ -6,7 +6,7 @@
  *
  *Description: and that piece of art is useful dora korpar
  *
- *return: Always 1 (sucess)
+ *Return: Always 0 (sucess)
  */
 
 int main(void)
