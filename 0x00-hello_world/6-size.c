@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *main - Entry point
  *
  *Description: Prints a list of compilers its compiled on
