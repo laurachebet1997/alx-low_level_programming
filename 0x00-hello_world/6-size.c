@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /*
- *main - entry point
+ *main - Entry point
  *
  *Description: Prints a list of compilers its compiled on
  *
  *Return: Always 0 (success)
  */
 
-int main()
+int main(void)
 {
 	char acharacter;
 	int ainteger;
