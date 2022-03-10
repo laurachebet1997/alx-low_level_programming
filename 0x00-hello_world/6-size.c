@@ -8,7 +8,7 @@
  *Return: Always 0 (success)
  */
 
-int main(void)
+int main(char, int, long, long-long, float)
 {
 	char acharacter;
 	int ainteger;
