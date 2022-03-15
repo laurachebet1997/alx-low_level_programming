@@ -20,7 +20,8 @@ void print_times_table(int n)
 			for (b = 1; b <= n; b++)
 			{
 				op = a * b;
-				_putchar(44);																_putchar(32);
+				_putchar(44);
+				_putchar(32);
 				if (op <= 9)
 				{
 					_putchar(32);
@@ -40,7 +41,7 @@ void print_times_table(int n)
 					_putchar((op % 10) + 48);
 				}
 			}
-			_putchar('\n');		
+			_putchar('\n');
 		}
 	}
 }
