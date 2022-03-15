@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * times_table - Entry point
@@ -13,12 +13,14 @@ void times_table(void)
 {
 	int i;
 	int num;
+	int times;
 
 	for (i = 0; i <= 10; i++)
 	{
 		for (num = 0; num <= 9; num++)
 		{
-			_putchar(num * i);
+			times = num * i;
+			_putchar(44);
 			_putchar('\n');
 		}
 	}
