@@ -3,6 +3,8 @@
 /**
  * _islower - Entry point
  *
+ * c - Defining c
+ *
  * Return: always 0
  *
  */
