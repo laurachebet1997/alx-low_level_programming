@@ -9,8 +9,7 @@
 
 void print_alphabet_x10(void)
 {
-	int i;
-	int times;
+	int times, i;
 
 	for (times = 0; times < 10; times++)
 	{
