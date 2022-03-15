@@ -3,8 +3,6 @@
 /**
  * times_table - Entry point
  *
- * @n: Defining a variable
- *
  * Return: Always 0
  *
  */
