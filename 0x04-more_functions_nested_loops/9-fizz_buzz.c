@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 /**
+ * main - entry block
  *
- * * main - entry block
+ * @void: no argument
  *
- * * @void: no argument
- *
- * * Return: 0 Success
- *
- * */
+ * Return: 0 Success
+ */
 
 int main(void)
 {
@@ -32,8 +30,8 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
-	printf("Buzz");
-	printf("\n");
-	return (0);
 	}
+	printf("\n");
+
+	return (0);
 }
