@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry block
@@ -8,7 +9,7 @@
  * Return: 0 Success
  */
 
-int main()
+int main(void)
 {
 	int i;
 
@@ -33,5 +34,5 @@ int main()
 	}
 	printf("\n");
 
-	return (0);
+	return (void);
 }
