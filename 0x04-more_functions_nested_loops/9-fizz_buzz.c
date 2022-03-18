@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -31,8 +30,7 @@ int main(void)
 		{
 			print("%d ", i);
 		}
+		printf("\n");
+		return (0);
 	}
-	printf("\n");
-
-	return (0);
 }
