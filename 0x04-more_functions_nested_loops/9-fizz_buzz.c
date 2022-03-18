@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - entry block
@@ -33,6 +32,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-
-	return (void);
+	return (0);
 }
