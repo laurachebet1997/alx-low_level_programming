@@ -8,7 +8,7 @@
  * Return: 0 Success
  */
 
-int main(void)
+int main()
 {
 	int i;
 
@@ -30,7 +30,8 @@ int main(void)
 		{
 			print("%d ", i);
 		}
-		printf("\n");
-		return (0);
 	}
+	printf("\n");
+
+	return (0);
 }

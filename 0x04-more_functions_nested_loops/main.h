@@ -28,4 +28,6 @@ void print_numbers(void);
 
 void print_number(int n);
 
+int main(void);
+
 #endif
