@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - Entry point
  *
- * @*n: variable description
+ * @n: variable description
  *
  * Return: Always 0
  */
