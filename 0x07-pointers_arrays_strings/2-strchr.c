@@ -8,7 +8,9 @@
  *
  * @c: the character
  *
- * Return: a pointer to a character aka the character found
+ * Return:  returns a ptr to the 1st occurrence of
+ *
+ * the char c in str s, else, return NULL
  */
 
 char *_strchr(char *s, char c)
