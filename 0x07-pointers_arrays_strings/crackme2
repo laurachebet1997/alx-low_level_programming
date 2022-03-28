@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+char password[]="abc123"; // set the password that user must match
+
+char input[20];          // user input buffer
+
+char filename[32];
+
+FILE *fp;
+
+int c,i,count=3;
+
+int main()
+{
+
+	printf("Please enter the password:");   //ask for password
+
+	fgets(input,20,stdin);                  //store user entry into input buffer
+
+	sscanf(input,"%s",input);               //format
+
+	if(strcmp(password,input)==0)   //if the input is equal to the password then open the file and print contents
+	{
+		if((fp=fopen("text","r")) != NULL)
+		{
+			while((c=getc(fp)) != EOF)
+			{
+				putchar(c);
+			}
+			fclose(fp);                     //close the file once done
+		}
+		else
+		{
+			perror("Error:");
+			return(-1);
+		}
+	}
+	else if(strcmp(password,input) != 0)    //if the input is wrong then give the user 3 more tries
+	{
+		for(i=0;i<3;i++)
+		{
+			printf("\nThe password you entered is incorrect!");
+			printf("\n%d tries left, password:",count);
+			fgets(input,20,stdin);
+			sscanf(input,"%s",input);
+			--count;
+			if(strcmp(password,input)==0)   //if out of those 3 tries entry is correct--open file/print contents
+			{
+				if((fp=fopen("text","r")) != NULL)
+				{
+					while((c=getc(fp)) !=EOF)
+					{
+						putchar(c);
+					}
+					fclose(fp);     //close file
+					break;          //break out of for loop
+				}
+				else
+				{
+					perror("Error:");
+					return(-1);
+				}
+			}
+		}
+	}
+}
