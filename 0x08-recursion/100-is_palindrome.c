@@ -17,7 +17,6 @@ int _strlen_recursion(char *s)
 }
 
 /**
- *
  * is_palind_recursive - checks if two chars of a string are equal
  *
  * @s: string to be checked
