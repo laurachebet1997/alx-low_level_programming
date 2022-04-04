@@ -23,8 +23,8 @@ char **strtow(char *str)
 	count += 1;*/
 	f = malloc(sizeof(char *) * count);
 	if (!f || count == 0)
-		count++;
 		return (NULL);
+	count++;
 	/*i = 0;*/
 	while (*str)
 	{
