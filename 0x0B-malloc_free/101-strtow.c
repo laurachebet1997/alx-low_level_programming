@@ -32,7 +32,7 @@ char **strtow(char *str)
 		len = 0;
 		while (*(str + len) != ' ' && *(str + len))
 			len += 1;
-		/*len += 1;*/
+		len += 1;
 		col = valloc(sizeof(char) * len);
 		if (!col)
 		{
