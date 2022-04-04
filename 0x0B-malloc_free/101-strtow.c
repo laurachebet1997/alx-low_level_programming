@@ -24,7 +24,7 @@ char **strtow(char *str)
 	f = malloc(sizeof(char *) * count);
 	if (!f || count == 0)
 		return (NULL);
-	/*i = 0;*/
+	i = 0;
 	while (*str)
 	{
 		while (*str == ' ' && *str)
