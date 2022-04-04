@@ -29,24 +29,21 @@ char **strtow(char *str)
 		while (*str == ' ' && *str)
 			str++;
 		len = 0;
-		while (*(str + len) != ' ' && *(str + len))
-			len += 1;
+		while (*(str + len) != ' ' && *(str + len))len += 1;
 		len += 1;
 		col = valloc(sizeof(char) * len);
 		if (!col)
 		{
 			for (k = j - 1; k >= 0; k--)
 				free(f[k]);
-			/*free(f);*/
 			return (NULL);
 		}
 		for (k = 0; k < (len - 1);  k++)
 			*(col + k) = *(str++);
 		*(col + k) = '\0';
 		*(f + j) = col;
-		if (j < (count - 1))
-			j++;
+		if (j < (count - 1))j++;
 	}
-	/**(f + j) = NULL;*/
+	*(f + j) = NULL;
 	return (f);
 }
