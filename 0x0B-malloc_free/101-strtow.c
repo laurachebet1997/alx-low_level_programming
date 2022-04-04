@@ -18,13 +18,12 @@ char **strtow(char *str)
 				count += 1;
 		i++;
 	}
-	/*if (count == 0)
-		return (NULL);*/
-	count = 0;
-	f = malloc(sizeof(char *) * count);
-	if (!f || count == 0)
+	if (count == 0)
 		return (NULL);
 	count++;
+	f = malloc(sizeof(char *) * count);
+	if (!f)
+		return (NULL);
 	while (*str)
 	{
 		while (*str == ' ' && *str)
@@ -38,7 +37,7 @@ char **strtow(char *str)
 		{
 			for (k = j - 1; k >= 0; k--)
 				free(f[k]);
-			free(f);
+			/*free(f);*/
 			return (NULL);
 		}
 		for (k = 0; k < (len - 1);  k++)
