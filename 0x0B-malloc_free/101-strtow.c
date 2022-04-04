@@ -23,7 +23,7 @@ char **strtow(char *str)
 	if (count == 0)
 		return (NULL);
 	count += 1;
-	if = malloc(sizeof(char *) * count);
+	f = malloc(sizeof(char *) * count);
 	if (!f)
 		return (NULL);
 	i = 0;
@@ -37,7 +37,7 @@ char **strtow(char *str)
 			len += 1;
 		}
 		len += 1;
-		col = alloc(sizeof(char) * len);
+		col = valloc(sizeof(char) * len);
 		if (!col)
 		{
 			for (k = j - 1; k >= 0; k--)
