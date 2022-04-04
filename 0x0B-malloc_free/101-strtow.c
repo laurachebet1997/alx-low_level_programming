@@ -42,11 +42,11 @@ char **strtow(char *str)
 		}
 		for (k = 0; k < (len - 1);  k++)
 			*(col + k) = *(str++);
-		*(col + k) = '\0';
+		/**(col + k) = '\0'*/;
 		*(f + j) = col;
 		if (j < (count - 1))
 			j++;
 	}
-	*(f + j) = NULL;
+	/**(f + j) = NULL;*/
 	return (f);
-} /*yes*/
+}
