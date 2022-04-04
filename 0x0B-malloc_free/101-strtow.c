@@ -19,13 +19,12 @@ char **strtow(char *str)
 		i++;
 	}
 	/*if (count == 0)
-		return (NULL);
-	count += 1;*/
+		return (NULL);*/
+	count = 0;
 	f = malloc(sizeof(char *) * count);
 	if (!f || count == 0)
 		return (NULL);
 	count++;
-	/*i = 0;*/
 	while (*str)
 	{
 		while (*str == ' ' && *str)
