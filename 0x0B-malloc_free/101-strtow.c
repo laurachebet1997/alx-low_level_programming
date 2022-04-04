@@ -35,7 +35,7 @@ char **strtow(char *str)
 		col = valloc(sizeof(char) * len);
 		if (!col)
 			for (k = j - 1; k >= 0; k--)
-				free(f[k]);
+				/*free(f[k]);*/
 			return (NULL);
 		for (k = 0; k < (len - 1);  k++)
 			*(col + k) = *(str++);
