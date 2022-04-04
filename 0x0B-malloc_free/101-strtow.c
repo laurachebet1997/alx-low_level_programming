@@ -18,11 +18,12 @@ char **strtow(char *str)
 				count += 1;
 		i++;
 	}
-	if (count == 0)
+	/*if (count == 0)
 		return (NULL);
-	count += 1;
+	count += 1;*/
 	f = malloc(sizeof(char *) * count);
-	if (!f)
+	if (!f || count == 0)
+		count++;
 		return (NULL);
 	/*i = 0;*/
 	while (*str)
