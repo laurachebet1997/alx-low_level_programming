@@ -2,6 +2,7 @@
 
 /**
  *hash_table_set - adds an element to the hash table
+ *
  *@ht: pointer to the hash
  *@key: pointer to the key
  *@value: value to add
