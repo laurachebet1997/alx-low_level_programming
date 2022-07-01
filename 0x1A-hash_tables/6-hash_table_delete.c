@@ -8,6 +8,8 @@ void hash_table_delete(hash_table_t *ht)
 	hash_node_t *node, *temp;
 	unsigned long int cont = 0;
 
+	if (ht == NULL)
+		return;
 	for (cont = 0; cont < ht->size; cont++)
 	{
 		node = ht->array[cont];
