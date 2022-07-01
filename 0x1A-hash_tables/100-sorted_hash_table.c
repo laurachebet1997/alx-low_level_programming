@@ -72,8 +72,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	new->value = copy;
-	/*Node assigned from end, next points to the beginning of
-	  linked list*/
 	new->next = ht->array[index];
 	ht->array[index] = new;
 	if (ht->shead == NULL)
