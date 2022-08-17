@@ -1,4 +1,4 @@
-#Makefile executable deletes and recompilation 
+# Makefile executable deletes and recompilation 
 
 CC = gcc
 OBJ = $(SRC:.c=.o)
@@ -14,9 +14,12 @@ clean:
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-fclean:clean oclean
+clean:
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
+
+fclean:clean oclean
 
 re: oclean all
